@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NUTRIX</string>
+    <string name="tagline">Scan · Search · Track · Stay Healthy</string>
+    <string name="sub_tagline">Know your food. Build better habits. A healthier you, every day.</string>
+    <string name="get_started">Get Started</string>
+    <string name="search_placeholder">Search for food (e.g. chicken curry)</string>
+    <string name="todays_summary">Today\'s Summary</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="scan_food">Scan Food</string>
+    <string name="search_food">Search Food</string>
+    <string name="diet_plan">Diet Plan</string>
+    <string name="food_history">Food History</string>
+    <string name="progress">Progress</string>
+    <string name="profile">Profile</string>
+    <string name="ai_assistant">AI Assistant</string>
+    <string name="grocery_list">Grocery List</string>
+    <string name="reminders">Reminders</string>
+    <string name="settings">Settings</string>
+    <string name="help_support">Help &amp; Support</string>
+</resources>

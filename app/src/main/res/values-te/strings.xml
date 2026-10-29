@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NUTRIX</string>
+    <string name="tagline">స్కాన్ · శోధించండి · ట్రాక్ · ఆరోగ్యంగా ఉండండి</string>
+    <string name="sub_tagline">మీ ఆహారాన్ని తెలుసుకోండి. మంచి అలవాట్లను పెంపొందించుకోండి.</string>
+    <string name="get_started">ప్రారంభించండి</string>
+    <string name="search_placeholder">ఆహారాన్ని శోధించండి (ఉదా. చికెన్ కర్రీ)</string>
+    <string name="todays_summary">ఈరోజు సారాంశం</string>
+    <string name="quick_actions">త్వరిత చర్యలు</string>
+    <string name="scan_food">ఆహారాన్ని స్కాన్ చేయండి</string>
+    <string name="search_food">ఆహార శోధన</string>
+    <string name="diet_plan">డైట్ ప్లాన్</string>
+    <string name="food_history">ఆహార చరిత్ర</string>
+    <string name="progress">పురోగతి</string>
+    <string name="profile">ప్రొఫైల్</string>
+    <string name="ai_assistant">AI అసిస్టెంట్</string>
+    <string name="grocery_list">కిరాణా జాబితా</string>
+    <string name="reminders">జ్ఞాపికలు</string>
+    <string name="settings">సెట్టింగ్‌లు</string>
+    <string name="help_support">సహాయం &amp; మద్దతు</string>
+</resources>

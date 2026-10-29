@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NUTRIX</string>
+    <string name="tagline">स्कैन करें · खोजें · ट्रैक करें · स्वस्थ रहें</string>
+    <string name="sub_tagline">अपने भोजन को जानें। बेहतर आदतें बनाएं।</string>
+    <string name="get_started">शुरू करें</string>
+    <string name="search_placeholder">भोजन खोजें (उदा. चिकन करी)</string>
+    <string name="todays_summary">आज का सारांश</string>
+    <string name="quick_actions">त्वरित क्रियाएं</string>
+    <string name="scan_food">भोजन स्कैन करें</string>
+    <string name="search_food">भोजन खोज</string>
+    <string name="diet_plan">आहार योजना</string>
+    <string name="food_history">भोजन इतिहास</string>
+    <string name="progress">प्रगति</string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="ai_assistant">एआई सहायक</string>
+    <string name="grocery_list">किराना सूची</string>
+    <string name="reminders">अनुस्मारक</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="help_support">सहायता और समर्थन</string>
+</resources>

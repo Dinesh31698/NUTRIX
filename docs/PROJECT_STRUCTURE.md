@@ -2,7 +2,9 @@
 
 ## Overview
 
-NUTRIX is an Android application developed using Kotlin and Gradle. This document describes the repository's main directories and configuration files to help developers navigate the codebase.
+NUTRIX is a native Android application developed using Kotlin, Jetpack Compose, and Gradle. Its source code follows a feature-oriented organization with shared components for application data, nutrition calculations, UI design, networking, and notifications.
+
+This document explains the repository structure and the responsibilities of its major components.
 
 ## Repository Layout
 
@@ -12,97 +14,168 @@ NUTRIX/
 │   ├── src/
 │   │   ├── main/
 │   │   │   ├── java/com/nutrix/app/
+│   │   │   │   ├── core/
+│   │   │   │   │   ├── database/
+│   │   │   │   │   ├── designsystem/
+│   │   │   │   │   ├── engine/
+│   │   │   │   │   ├── model/
+│   │   │   │   │   ├── network/
+│   │   │   │   │   └── notifications/
+│   │   │   │   ├── data/
+│   │   │   │   │   ├── repository/
+│   │   │   │   │   └── seed/
+│   │   │   │   ├── feature/
+│   │   │   │   │   ├── assistant/
+│   │   │   │   │   ├── dietplan/
+│   │   │   │   │   ├── fooddetails/
+│   │   │   │   │   ├── foodhistory/
+│   │   │   │   │   ├── foodsearch/
+│   │   │   │   │   ├── grocery/
+│   │   │   │   │   ├── home/
+│   │   │   │   │   ├── onboarding/
+│   │   │   │   │   ├── profile/
+│   │   │   │   │   ├── progress/
+│   │   │   │   │   ├── reminders/
+│   │   │   │   │   ├── scanner/
+│   │   │   │   │   ├── scanresult/
+│   │   │   │   │   └── welcome/
+│   │   │   │   └── navigation/
 │   │   │   ├── res/
 │   │   │   └── AndroidManifest.xml
 │   │   └── test/
-│   ├── build.gradle.kts
-│   └── proguard-rules.pro
+│   └── build.gradle.kts
+│
 ├── docs/
 │   ├── ARCHITECTURE.md
+│   ├── PRIVACY_AND_SECURITY.md
 │   └── PROJECT_STRUCTURE.md
+│
+├── screenshots/
+│   ├── AI.png
+│   ├── DitePlan.png
+│   ├── FoodHistory.png
+│   ├── FoodQuantity.png
+│   ├── HomeScreen.png
+│   ├── SearchFood.png
+│   └── Settings.png
+│
 ├── gradle/
 │   ├── libs.versions.toml
 │   └── wrapper/
+│
 ├── .gitignore
+├── CONTRIBUTING.md
+├── README.md
+├── ROADMAP.md
 ├── build.gradle.kts
 ├── gradle.properties
 ├── gradlew
 ├── gradlew.bat
-├── settings.gradle.kts
-└── README.md
+└── settings.gradle.kts
 ```
 
 ## Main Directories
 
 ### `app/`
 
-Contains the Android application module, including Kotlin source code, resources, application configuration, and tests.
+Contains the Android application module, including source code, resources, module configuration, and unit tests.
 
-### `app/src/main/java/com/nutrix/app/`
+### `core/`
 
-Contains the application's Kotlin packages, organized around shared components and feature areas.
+Contains shared application components.
 
-- `core/` — shared application components, data models, database functionality, design system, engines, networking, and notifications.
-- `data/` — repository and food-data components.
-- `feature/` — feature-specific screens such as home, scanning, food search, food details, history, diet planning, groceries, reminders, profile, progress, and AI assistance.
-- `navigation/` — application navigation components.
+- `database/` — database entities, data access objects, and database configuration.
+- `designsystem/` — shared UI components, themes, colors, and visual helpers.
+- `engine/` — nutrition calculations, health ratings, diet suggestions, and assistant logic.
+- `model/` — food and nutrition data models.
+- `network/` — external food-data integration.
+- `notifications/` — reminder scheduling and notification handling.
 
-These descriptions reflect the package structure present in the initial project source commit. Individual responsibilities may evolve as the application develops.
+### `data/`
 
-### `app/src/main/res/`
+Contains data access and repository-related components.
+
+- `repository/` — coordinates application data operations.
+- `seed/` — initial food data.
+
+### `feature/`
+
+Contains feature-specific screens and user workflows.
+
+- `assistant/` — AI assistant.
+- `dietplan/` — diet planning.
+- `fooddetails/` — food details.
+- `foodhistory/` — food history.
+- `foodsearch/` — food search.
+- `grocery/` — grocery management.
+- `home/` — home dashboard.
+- `onboarding/` — onboarding workflow.
+- `profile/` — profile settings.
+- `progress/` — progress tracking.
+- `reminders/` — reminder settings.
+- `scanner/` — food scanning.
+- `scanresult/` — scan result presentation.
+- `welcome/` — welcome screen.
+
+### `navigation/`
+
+Contains application navigation components.
+
+### `res/`
 
 Contains Android resources, including launcher icons, themes, and localized string resources.
 
-### `app/src/test/`
+### `test/`
 
-Contains unit tests for application logic, including nutrition calculations, health ratings, diet suggestions, and AI assistant functionality.
+Contains unit tests for application logic, including nutrition calculations, health ratings, diet suggestions, and assistant functionality.
 
-### `gradle/`
+### `docs/`
 
-Contains Gradle wrapper support files and the version catalog used to organize dependency versions.
+Contains project architecture, structure, and privacy documentation.
+
+### `screenshots/`
+
+Contains visual references of the NUTRIX Android application for the GitHub project page.
 
 ## Root Configuration Files
 
 | File | Purpose |
 |---|---|
-| `build.gradle.kts` | Root Gradle build configuration |
+| `build.gradle.kts` | Root Gradle configuration |
 | `app/build.gradle.kts` | Android application module configuration |
-| `settings.gradle.kts` | Project and module settings |
-| `gradle.properties` | Gradle build properties |
-| `gradle/libs.versions.toml` | Centralized dependency and plugin versions |
-| `gradlew` | Gradle wrapper script for Unix-like systems |
-| `gradlew.bat` | Gradle wrapper script for Windows |
-| `proguard-rules.pro` | Rules for code shrinking and obfuscation |
+| `settings.gradle.kts` | Project and module configuration |
+| `gradle.properties` | Gradle properties |
+| `gradle/libs.versions.toml` | Dependency and plugin version catalog |
+| `gradlew` | Gradle wrapper for Unix-like systems |
+| `gradlew.bat` | Gradle wrapper for Windows |
 | `.gitignore` | Excludes selected files from version control |
-| `README.md` | Project introduction and setup instructions |
-
-## Documentation
-
-- `README.md` — project overview, features, and setup.
-- `docs/ARCHITECTURE.md` — conceptual application architecture and data flow.
-- `docs/PROJECT_STRUCTURE.md` — repository organization and file responsibilities.
+| `README.md` | Main project documentation |
+| `CONTRIBUTING.md` | Contribution guidelines |
+| `ROADMAP.md` | Future development direction |
 
 ## Development Workflow
 
-1. Open the project root in Android Studio.
-2. Allow Gradle to synchronize the project.
+1. Open the repository in Android Studio.
+2. Allow Gradle synchronization to complete.
 3. Make changes within the relevant source packages.
-4. Keep documentation synchronized with meaningful code changes.
-5. Review Git changes before committing.
-6. Push commits to the GitHub repository.
+4. Keep documentation synchronized with significant changes.
+5. Review modifications before committing.
+6. Commit and push intended changes to GitHub.
 
 ## Version Control and Security
 
-Do not commit API keys, passwords, signing credentials, or other secrets. Keep local machine configuration and generated build artifacts out of version control.
+Do not commit API keys, passwords, signing credentials, or private configuration.
+
+Generated build files, IDE-specific settings, and local machine configuration should remain outside version control unless explicitly required.
 
 ## Documentation Accuracy
 
-This document describes the repository structure and intended responsibilities of its components. Feature behavior and external integrations should be documented separately and should reflect the actual implementation.
+This document describes the repository organization and intended component responsibilities. Feature behavior and external integrations should be documented according to the actual implementation.
 
 ---
 
 **Project:** NUTRIX  
 **Platform:** Android  
 **Language:** Kotlin  
-**Build system:** Gradle with Kotlin DSL  
+**Build System:** Gradle with Kotlin DSL  
 **Repository:** https://github.com/Dinesh31698/NUTRIX

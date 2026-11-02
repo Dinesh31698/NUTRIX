@@ -1,14 +1,27 @@
-﻿.gradle/
-.idea/
-.kotlin/
+# Gradle
+.gradle/
 build/
 **/build/
-local.properties
+
+# Android Studio
+.idea/
 *.iml
+
+# Kotlin
+.kotlin/
+
+# Local configuration
+local.properties
+
+# Android build artifacts
+captures/
 .externalNativeBuild/
 .cxx/
-captures/
+
+# Signing credentials
 *.jks
 *.keystore
+
+# Environment variables and secrets
 .env
 .env.*

@@ -1,88 +1,80 @@
 # NUTRIX — AI-Powered Food Intelligence & Personal Nutrition
 
-**Understand your food. Track your nutrition. Build better habits.**
-
-NUTRIX is a native Android application designed to bring food discovery, nutrition information, food tracking, personalized diet planning, hydration, reminders, and AI-assisted nutrition guidance into one mobile experience.
-
-Built with Kotlin and Jetpack Compose, NUTRIX aims to make everyday food information easier to understand and help users make more informed dietary choices through a modern, organized, and accessible interface.
-
 <p align="center">
-  <strong>Food Intelligence · Nutrition Tracking · Personalized Planning</strong>
+  <strong>Understand Your Food. Track Your Nutrition. Build Better Habits.</strong>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Dinesh31698/NUTRIX">GitHub Repository</a> ·
-  <a href="#features">Features</a> ·
-  <a href="#application-screenshots">Screenshots</a> ·
-  <a href="#getting-started">Get Started</a>
+  A modern Android nutrition companion designed to make food discovery, nutritional awareness, and personalized dietary management easier.
+</p>
+
+<p align="center">
+  <img src="screenshots/HomeScreen.png" width="220" alt="NUTRIX Home Screen">
+</p>
+
+<p align="center">
+  <a href="https://github.com/Dinesh31698/NUTRIX">GitHub Repository</a> •
+  <a href="#features">Features</a> •
+  <a href="#application-screenshots">Screenshots</a> •
+  <a href="#getting-started">Getting Started</a>
 </p>
 
 ---
 
-## Table of Contents
+## About NUTRIX
 
-- [Overview](#overview)
-- [Features](#features)
-- [Application Screenshots](#application-screenshots)
-- [Technology Stack](#technology-stack)
-- [Architecture](#architecture)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Build Commands](#build-commands)
-- [Project Documentation](#project-documentation)
-- [Privacy and Security](#privacy-and-security)
-- [Responsible Nutrition](#responsible-nutrition)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
+NUTRIX is an Android application built to bring food intelligence and everyday nutrition management into one convenient platform.
 
-## Overview
+Understanding food labels, calories, serving quantities, and nutritional values can be challenging. NUTRIX aims to simplify this experience by combining food discovery, nutrition analysis, food history, personalized diet planning, hydration tracking, reminders, and AI-assisted guidance.
 
-Understanding food labels, serving sizes, calories, and nutritional values can be challenging. NUTRIX is designed to make these activities more convenient by bringing food-related information and daily nutrition management into one Android application.
+Developed using Kotlin and Jetpack Compose, the application focuses on a modern mobile experience with a structured architecture and reusable components.
 
-The project combines food discovery, nutrition calculations, food history, dietary planning, hydration tracking, reminders, and AI-assisted guidance in a single experience.
+### Vision
 
-### Project Objectives
+To make everyday nutrition information more accessible, understandable, and actionable.
 
-- Make food and nutrition information easier to understand.
-- Support food discovery and nutritional awareness.
-- Help users record food consumption and serving quantities.
-- Organize dietary goals and meal-planning workflows.
-- Encourage consistent hydration and daily routines.
-- Provide a modern Android user experience.
-- Build a maintainable foundation for future improvements.
+### Objectives
+
+- Simplify food discovery and nutritional awareness.
+- Help users understand calories and serving quantities.
+- Support consistent food tracking.
+- Organize personalized dietary goals.
+- Encourage healthier everyday routines.
+- Provide convenient nutrition-related assistance.
+- Build a maintainable and extensible Android application.
+
+---
 
 ## Features
 
-NUTRIX is organized around the following functional areas. The availability of individual capabilities depends on the current application implementation and its configured services.
-
-### 1. Food Discovery and Scanning
+### 1. Food Discovery & Scanning
 
 - Food search and selection.
 - Packaged-food information lookup through the configured food-data integration.
 - Food-scanning workflows for supported inputs.
-- Food discovery for Indian dishes and other food items.
-- Manual selection when automatic identification is unavailable.
+- Discovery of Indian foods and dishes.
+- Manual food selection when automatic identification is unavailable.
 
-### 2. Nutrition Analysis
+### 2. Nutrition Intelligence
 
-- Calorie and nutritional information where available.
-- Serving-size and quantity-based nutrition calculations.
+- Calorie information where available.
+- Nutrition calculations based on serving quantities.
 - Food health ratings on a 1–5 scale, where supported.
-- Nutrition summaries designed for easier interpretation.
-- Support for communicating the limitations of estimated food information.
+- Food-related nutritional summaries.
+- Easier interpretation of available nutrition information.
 
-### 3. Food History and Tracking
+### 3. Food History & Tracking
 
-- Recording food items and serving quantities.
-- Reviewing previously recorded entries.
-- Organizing food records by date.
-- Summarizing available nutrition information.
-- Supporting consistent food-tracking habits.
+- Record food consumption.
+- Maintain food history.
+- Review previously recorded food entries.
+- Track serving quantities.
+- Organize food records by date.
+- Review available nutritional information.
 
 ### 4. Personalized Diet Planning
 
-Designed around common nutrition goals:
+Supports common dietary goals:
 
 - Healthy weight gain.
 - Weight loss.
@@ -90,92 +82,124 @@ Designed around common nutrition goals:
 - Weight maintenance.
 - Balanced nutrition.
 
-The broader goal is to make dietary planning more convenient through organized meal information and user-selected preferences.
+The diet-planning feature area is designed to help organize meal choices around user-selected goals.
 
 ### 5. Hydration Tracking
 
-- Recording daily water intake.
-- Tracking progress toward a hydration target.
-- Supporting more consistent hydration habits.
+- Record water intake.
+- Track daily hydration progress.
+- Support consistent hydration habits.
 
 ### 6. Smart Reminders
 
-- Meal and hydration reminder workflows.
-- Reminder preferences where supported.
-- Android notification integration subject to permissions and system restrictions.
+- Meal reminder workflows.
+- Hydration reminder workflows.
+- Android notification integration.
+- Reminder customization where supported.
 
 ### 7. AI Nutrition Assistant
 
-- Conversational assistance for food-related questions.
+- Conversational food-related assistance.
 - Help understanding nutritional information.
-- General food-choice and meal-planning guidance.
-- Potential integration with AI services, depending on the configured implementation.
+- General nutrition guidance.
+- Food-choice and meal-planning assistance.
 
 AI-generated information may be incomplete or inaccurate and should be interpreted appropriately.
 
 ### 8. Grocery Management
 
-- A dedicated grocery-related feature area.
-- Support for organizing food-shopping needs as the functionality develops.
+- Dedicated grocery feature area.
+- Organization of food-shopping needs as functionality develops.
 
-### 9. Personalization and Localization
+### 9. Personalization & Localization
 
-- A dark-themed interface.
-- Reusable design components and shared theming.
+- Modern dark-themed interface.
+- Reusable design components.
+- Shared color and theme system.
 - English, Telugu, and Hindi string resources.
-- Opportunities for further accessibility and personalization improvements.
+- Scope for future accessibility improvements.
+
+---
 
 ## Application Screenshots
 
-Screenshots are maintained in the repository's `screenshots/` directory.
+Explore the NUTRIX Android application through its main screens.
 
-Add your actual screenshot filenames to the gallery below. GitHub renders images using relative paths, so screenshots committed to the repository can appear directly on this page.
+### Home Screen
 
-<!-- Replace the example filenames below with the actual files in screenshots/. -->
+<p align="center">
+  <img src="screenshots/HomeScreen.png" width="280" alt="NUTRIX Home Screen">
+</p>
 
-| Home Screen | Food Scanner |
-|---|---|
-| ![NUTRIX Home Screen](screenshots/home.png) | ![NUTRIX Food Scanner](screenshots/scanner.png) |
+### Food Search & Discovery
 
-| Food Details | Food History |
-|---|---|
-| ![NUTRIX Food Details](screenshots/food-details.png) | ![NUTRIX Food History](screenshots/history.png) |
+<p align="center">
+  <img src="screenshots/SearchFood.png" width="280" alt="NUTRIX Food Search">
+</p>
 
-| Diet Planning | AI Assistant |
-|---|---|
-| ![NUTRIX Diet Planning](screenshots/diet-plan.png) | ![NUTRIX AI Assistant](screenshots/assistant.png) |
+### Food Quantity & Nutrition
 
-> **Screenshot note:** The filenames above are examples. Replace them with the exact filenames inside your `screenshots/` folder. Remove any gallery entries for images you do not have.
+<p align="center">
+  <img src="screenshots/FoodQuantity.png" width="280" alt="NUTRIX Food Quantity">
+</p>
+
+### Food History
+
+<p align="center">
+  <img src="screenshots/FoodHistory.png" width="280" alt="NUTRIX Food History">
+</p>
+
+### Personalized Diet Planning
+
+<p align="center">
+  <img src="screenshots/DitePlan.png" width="280" alt="NUTRIX Diet Planning">
+</p>
+
+### AI Nutrition Assistant
+
+<p align="center">
+  <img src="screenshots/AI.png" width="280" alt="NUTRIX AI Assistant">
+</p>
+
+### Settings & Personalization
+
+<p align="center">
+  <img src="screenshots/Settings.png" width="280" alt="NUTRIX Settings">
+</p>
+
+---
 
 ## Technology Stack
 
 | Technology | Purpose |
 |---|---|
-| Kotlin | Primary application language |
-| Android SDK | Native Android platform |
-| Jetpack Compose | Declarative UI framework |
+| Kotlin | Primary programming language |
+| Android SDK | Native Android development |
+| Jetpack Compose | Modern declarative UI |
 | Gradle | Build automation |
 | Kotlin DSL | Build configuration |
-| AndroidX | Android application support libraries |
-| Room | Local database components, as configured |
-| Kotlin Coroutines / Flow | Asynchronous operations, where used |
+| AndroidX | Android application libraries |
+| Room | Local database components |
+| Kotlin Coroutines / Flow | Asynchronous operations where used |
 | Open Food Facts API | Packaged-food information integration |
 | Android Notifications | Reminder functionality |
 | JUnit | Unit testing |
 
-Dependency versions and the exact implementation are defined in the project's Gradle configuration and version catalog.
+Dependency versions and configurations are maintained in the project's Gradle files and version catalog.
 
-## Architecture
+---
 
-NUTRIX uses a feature-oriented Kotlin package structure with shared components for data, design, nutrition calculations, networking, and notifications.
+## Application Architecture
+
+NUTRIX follows a feature-oriented application structure with shared components for data management, design, nutrition calculations, networking, and notifications.
 
 ```mermaid
 flowchart TD
     USER[User]
-    UI[Android UI]
+    UI[Android UI - Jetpack Compose]
     NAV[Navigation]
 
-    subgraph FEATURES[Feature Areas]
+    subgraph FEATURES[Application Features]
         HOME[Home]
         SCAN[Food Scanner]
         SEARCH[Food Search]
@@ -188,7 +212,7 @@ flowchart TD
         PROFILE[Profile and Progress]
     end
 
-    subgraph CORE[Shared Components]
+    subgraph CORE[Core Components]
         MODELS[Food Models]
         CALC[Nutrition Calculator]
         RATING[Health Rating Engine]
@@ -211,27 +235,28 @@ flowchart TD
     REMINDERS --> NOTIFY
 ```
 
-*This is a high-level conceptual overview based on the project's source organization, not a complete runtime dependency graph.*
+### Core Responsibilities
 
-### Architectural Components
+- **Feature Layer:** Contains individual application screens and workflows.
+- **Design System:** Manages reusable UI components, colors, and themes.
+- **Data Models:** Represents food and nutrition-related information.
+- **Nutrition Calculator:** Performs nutrition calculations.
+- **Health Rating Engine:** Supports food rating logic.
+- **Diet Suggestion Engine:** Supports dietary suggestions.
+- **Repository:** Coordinates application data access.
+- **Database:** Provides local persistence through the configured database layer.
+- **Network Layer:** Integrates with external food-data services.
+- **Notification Layer:** Handles reminder scheduling.
 
-- **Feature screens:** Present the main user workflows.
-- **Design system:** Provides reusable visual components, colors, and themes.
-- **Food models:** Represent food and nutrition-related data.
-- **Nutrition calculator:** Supports nutrition calculations.
-- **Health rating engine:** Supports food rating logic.
-- **Diet suggestion engine:** Supports dietary suggestions.
-- **Repository:** Coordinates access to application data.
-- **Database components:** Provide local persistence through the configured database layer.
-- **Network integration:** Retrieves supported external food information.
-- **Notification components:** Support reminder scheduling.
+For additional information, see [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
-See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for further details.
+---
 
 ## Project Structure
 
 ```text
 NUTRIX/
+│
 ├── app/
 │   ├── src/
 │   │   ├── main/
@@ -243,22 +268,53 @@ NUTRIX/
 │   │   │   │   │   ├── model/
 │   │   │   │   │   ├── network/
 │   │   │   │   │   └── notifications/
+│   │   │   │   │
 │   │   │   │   ├── data/
+│   │   │   │   │   ├── repository/
+│   │   │   │   │   └── seed/
+│   │   │   │   │
 │   │   │   │   ├── feature/
+│   │   │   │   │   ├── assistant/
+│   │   │   │   │   ├── dietplan/
+│   │   │   │   │   ├── fooddetails/
+│   │   │   │   │   ├── foodhistory/
+│   │   │   │   │   ├── foodsearch/
+│   │   │   │   │   ├── grocery/
+│   │   │   │   │   ├── home/
+│   │   │   │   │   ├── onboarding/
+│   │   │   │   │   ├── progress/
+│   │   │   │   │   ├── reminders/
+│   │   │   │   │   ├── scanner/
+│   │   │   │   │   └── scanresult/
+│   │   │   │   │
 │   │   │   │   └── navigation/
+│   │   │   │
 │   │   │   ├── res/
 │   │   │   └── AndroidManifest.xml
+│   │   │
 │   │   └── test/
+│   │
 │   └── build.gradle.kts
+│
 ├── docs/
-│   ├── ARCHITECTURE.md
-│   ├── PROJECT_STRUCTURE.md
-│   └── PRIVACY_AND_SECURITY.md
+│   └── ARCHITECTURE.md
+│
 ├── screenshots/
+│   ├── AI.png
+│   ├── DitePlan.png
+│   ├── FoodHistory.png
+│   ├── FoodQuantity.png
+│   ├── HomeScreen.png
+│   ├── SearchFood.png
+│   └── Settings.png
+│
 ├── gradle/
-├── CONTRIBUTING.md
-├── ROADMAP.md
+│   ├── libs.versions.toml
+│   └── wrapper/
+│
 ├── README.md
+├── ROADMAP.md
+├── .gitignore
 ├── build.gradle.kts
 ├── gradle.properties
 ├── gradlew
@@ -266,48 +322,51 @@ NUTRIX/
 └── settings.gradle.kts
 ```
 
-This is a representative overview. Some files and directories may differ as the project evolves.
+This is a representative overview of the repository's organization. Additional files may exist as development progresses.
+
+---
 
 ## Getting Started
 
 ### Prerequisites
 
 - Android Studio.
-- A JDK compatible with the project's Gradle configuration.
-- Required Android SDK components.
-- An Android emulator or compatible Android device.
+- A compatible JDK.
+- Android SDK.
+- Android emulator or physical Android device.
 - Git.
 
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Dinesh31698/NUTRIX.git
-cd NUTRIX
 ```
 
-### 2. Open in Android Studio
+### 2. Open the Project
 
 1. Launch Android Studio.
 2. Select **Open**.
-3. Choose the cloned `NUTRIX` directory.
+3. Choose the cloned `NUTRIX` folder.
 4. Allow Gradle synchronization to complete.
-5. Install any missing SDK components if prompted.
+5. Install any required Android SDK components.
 
 ### 3. Run the Application
 
-1. Start an emulator or connect a compatible Android device.
+1. Start an Android emulator or connect an Android device.
 2. Select the application run configuration.
 3. Click **Run** in Android Studio.
 
-Network-dependent features may require internet connectivity and appropriate service configuration.
+Some features may require internet connectivity, permissions, or external service configuration.
+
+---
 
 ## Build Commands
 
-Run commands from the project root.
+Run these commands from the project root.
 
 ### Windows PowerShell
 
-Build a debug APK:
+Build the debug APK:
 
 ```powershell
 .\gradlew.bat assembleDebug
@@ -319,9 +378,9 @@ Run unit tests:
 .\gradlew.bat testDebugUnitTest
 ```
 
-### macOS or Linux
+### macOS / Linux
 
-Build a debug APK:
+Build the debug APK:
 
 ```bash
 ./gradlew assembleDebug
@@ -339,84 +398,79 @@ The debug APK is normally generated at:
 app/build/outputs/apk/debug/app-debug.apk
 ```
 
-Build outputs are generated locally and generally should not be committed to the source repository.
+---
 
-## Project Documentation
+## Privacy & Security
 
-| Document | Description |
-|---|---|
-| [Application Architecture](docs/ARCHITECTURE.md) | Components, responsibilities, and data flow |
-| [Project Structure](docs/PROJECT_STRUCTURE.md) | Repository organization |
-| [Privacy and Security](docs/PRIVACY_AND_SECURITY.md) | Data handling and security principles |
-| [Contribution Guidelines](CONTRIBUTING.md) | Contribution workflow |
-| [Product Roadmap](ROADMAP.md) | Potential future development priorities |
+NUTRIX aims to follow responsible application development practices:
 
-Keep these documents aligned with the actual source code and implemented functionality.
+- Keep API keys, passwords, and private credentials out of source control.
+- Exclude local machine configuration from Git.
+- Request only permissions required by application features.
+- Minimize unnecessary sharing of personal information.
+- Handle external service failures safely.
+- Document relevant data-processing behavior as the application evolves.
 
-## Privacy and Security
-
-NUTRIX should follow privacy-conscious development practices:
-
-- Never commit API keys, passwords, tokens, or signing credentials.
-- Exclude local machine configuration from version control.
-- Request only permissions needed by enabled features.
-- Minimize data sent to external services.
-- Document relevant data processing and retention behavior.
-- Handle service failures without exposing secrets.
-- Avoid claiming fully offline operation when a feature depends on a network service.
-
-See [`docs/PRIVACY_AND_SECURITY.md`](docs/PRIVACY_AND_SECURITY.md).
+---
 
 ## Responsible Nutrition
 
-NUTRIX is intended to support food awareness and general nutrition education. Nutrition estimates and food ratings may vary with ingredients, serving sizes, preparation methods, and available data.
+NUTRIX is intended for general food awareness and nutrition education.
 
-The application should not be treated as a medical diagnostic tool. Users with medical conditions, allergies, or specialized dietary requirements should consult a qualified healthcare professional.
+Nutrition information and ratings can vary depending on ingredient data, serving quantities, preparation methods, and information availability.
 
-## Roadmap
+NUTRIX should not be considered a medical diagnostic tool or a replacement for professional dietary advice. Users with medical conditions, allergies, or specialized nutritional needs should consult qualified healthcare professionals.
+
+---
+
+## Future Roadmap
 
 Potential future improvements include:
 
-- Expanded packaged-food and regional-food coverage.
-- Better food identification and nutrition estimates.
+- Expanded packaged-food database coverage.
+- Improved food recognition workflows.
+- More regional Indian food information.
 - More transparent health-rating explanations.
-- Improved food-history summaries and analytics.
-- More flexible weekly meal planning.
+- Improved food-history analytics.
+- Flexible weekly diet planning.
 - Enhanced hydration and reminder customization.
-- More capable AI-assisted food guidance.
-- Expanded localization and accessibility.
-- Improved offline data access.
+- More capable AI-assisted nutrition guidance.
+- Improved offline access.
+- Additional localization and accessibility.
 - Continued security and maintainability improvements.
 
-See [`ROADMAP.md`](ROADMAP.md) for additional details.
+See [`ROADMAP.md`](ROADMAP.md) for the development direction.
+
+---
 
 ## Contributing
 
-Suggestions, documentation improvements, and code contributions are welcome.
+Suggestions, improvements, and contributions are welcome.
 
-1. Review the project documentation.
+1. Review the existing source code and documentation.
 2. Create a feature or fix branch.
 3. Make focused changes.
-4. Review changes for quality and accidental secrets.
-5. Commit with a descriptive message.
-6. Submit a pull request with a clear explanation.
+4. Review your changes before committing.
+5. Submit a pull request with a clear explanation.
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md).
+---
 
 ## License
 
-No open-source license has been specified in this repository's documentation. Until a license is added, the default copyright rules apply. Please do not assume the code is available for unrestricted reuse or redistribution.
+No open-source license has currently been specified for this repository. Unless a license is added, the default copyright rules apply. Please do not assume unrestricted permission to reuse or redistribute the source code.
+
+---
 
 ## Acknowledgements
 
-NUTRIX is built with the Android development ecosystem and may use third-party libraries and food-data services as configured in the project. The applicable licenses and terms of those services remain in effect.
+NUTRIX is built using the Android development ecosystem and may use third-party libraries and food-data services as configured in the application. Their respective licenses and terms apply.
 
 ---
 
 <p align="center">
-  <strong>NUTRIX — Making everyday nutrition information easier to understand.</strong>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Dinesh31698/NUTRIX">Explore the Repository</a>
+  <strong>NUTRIX</strong>
+  <br>
+  Making everyday nutrition information easier to understand.
+  <br><br>
+  <a href="https://github.com/Dinesh31698/NUTRIX">Explore NUTRIX on GitHub</a>
 </p>
